@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".TeacherRegistration">
+    <include
+        layout="@layout/toolbar"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:id="@+id/userSignUpId"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userSignUpView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="User SignUp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="2dp"
+                android:background="#AEA8A8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/adminSignUpId"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Admin SignUp"
+                />
+            <View
+                android:id="@+id/adminSignUpView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="2dp"
+                android:background="#AEA8A8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="7dp"
+        android:elevation="7dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="20sp"
+                    android:text="Teacher Registration Form"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF7043"
+                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="320dp"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    android:src="@drawable/profile_picture"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:id="@+id/Teacherprofile_image"-->
+<!--                    />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Teacherprofile_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/profile_picture"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="116dp"
+                    tools:layout_editor_absoluteY="48dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:boxStrokeColor="#000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#F80101"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_person"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/TeachernamefieldId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your name :"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:boxStrokeColor="#000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#F80101"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="11"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_call"
+                    android:layout_marginTop="7dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/TeachernumberfieldId"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="11"
+                        android:hint="Enter your number :"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:boxStrokeColor="#000"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_email"
+                    android:layout_marginTop="7dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/TeacheremailfieldId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your email :"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:boxStrokeColor="#000"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#F80101"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_password"
+                    android:layout_marginTop="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/TeacherpasswordfieldId"
+                        android:inputType="numberPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your password :"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/TeacherbuttonId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Click TO ADD"
+                    android:backgroundTint="#FFCA28"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/TeacherTextViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end"
+                    android:text="Already have an account ?"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SplashScreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"
+                />
+
+            <TextView
+                android:id="@+id/solganId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attendance Taker App"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                />
+            <TextView
+                android:id="@+id/solganId1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take The Attendence In Smart Way"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

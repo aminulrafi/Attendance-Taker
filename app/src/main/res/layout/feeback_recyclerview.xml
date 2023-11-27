@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="320dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="56dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="7dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/feedbackNameId"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:text="Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/feedbackOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Occupation"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.305" />
+
+            <TextView
+                android:id="@+id/feedBackFeedBackId"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/feedbackOccupation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="210dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/feedbackProfileImageId"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_picture"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
